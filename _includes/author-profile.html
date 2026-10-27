@@ -1,0 +1,18 @@
+<div itemscope itemtype="https://schema.org/Person" class="profile_box">
+  <a class="author__avatar" href="{{ '/' | relative_url }}" aria-label="Xihan Ma homepage">
+    <img src="{{ site.author.avatar | relative_url }}" alt="Portrait of Xihan Ma" width="1060" height="1484" itemprop="image">
+  </a>
+  <div class="profile-details">
+    <div class="author__content">
+      <h1 class="author__name" itemprop="name">{{ site.author.name }}</h1>
+      <p class="author__bio">Master's Student<br>Beijing Institute of Technology</p>
+      <p class="author__bio">Research Intern<br>Horizon Robotics Lab</p>
+    </div>
+    <ul class="profile-links">
+      <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Beijing, China</li>
+      <li><a href="mailto:{{ site.author.email }}"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a></li>
+      <li><a href="https://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+      {% if site.author.googlescholar %}<li><a href="{{ site.author.googlescholar | escape }}"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a></li>{% endif %}
+    </ul>
+  </div>
+</div>
